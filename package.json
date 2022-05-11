@@ -1,0 +1,24 @@
+{
+  "name": "vite-project-template",
+  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [
+    "vite",
+    "template"
+  ],
+  "author": "Oleksandr Kropivnyi <kropivnyy@gmail.com>",
+  "license": "ISC",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build --base=/vite-project-template/",
+    "preview": "vite preview",
+    "deploy": "sh deploy.sh Kropivnyy vite-project-template"
+  },
+  "devDependencies": {
+    "sass": "^1.51.0",
+    "vite": "2.9.8",
+    "vite-plugin-handlebars": "^1.6.0",
+    "vite-plugin-html": "^3.2.0"
+  }
+}
