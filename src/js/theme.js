@@ -24,14 +24,10 @@ const setLightTheme = () => {
 
 const setDefaultTheme = () => {
   const savedTheme = localStorage.getItem('theme');
-  if (savedTheme === Theme.LIGHT || savedTheme === null) {
-    setLightTheme();
-    return;
-  }
   if (savedTheme === Theme.DARK) {
     setDarkTheme();
     return;
   }
+  setLightTheme();
 };
-
 setDefaultTheme();
